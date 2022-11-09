@@ -1,0 +1,46 @@
+.buttonLikeLink {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    color: Gold;
+    font-weight: bolder;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding-bottom: 2px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .buttonLikeLink:hover{
+    color: #002299;
+    transition: 0.35s;
+    text-decoration: none;
+  }
+
+  /*underline from center to two sides*/
+  .buttonLikeLink:after {
+  background: #29d;
+  content: '';
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition-duration: .35s;
+  transition-duration: .35s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.buttonLikeLink:hover:after {
+  width: 100%;
+}
+
+.buttonLikeLink:hover{
+  text-decoration: none;
+  color: #29d;
+}
